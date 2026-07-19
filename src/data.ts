@@ -281,17 +281,17 @@ export const achievements = [
 ];
 
 export const collegeActivities = [
-  { title: "SecCom 2025", detail: "Expert Talk · Participation Certificate", period: "31 Oct – 1 Nov 2025" },
-  { title: "Freshers 2025", detail: "Volunteer Certificate · Celebration", period: "13 Oct – 29 Nov 2025" },
-  { title: "HR Spark 2025", detail: "Seminar · Participation Certificate", period: "8 Feb 2025" },
-  { title: "SecCom 2024", detail: "Celebration · Participation Certificate", period: "28–29 Nov 2024" },
-  { title: "Freshers Welcome 2024", detail: "Celebration · Participation Certificate", period: "1–7 Oct 2024" },
-  { title: "TechFusion 2024 (BrainCon)", detail: "Intercollege Tech Challenge · Participation", period: "18 May 2024" },
-  { title: "Annual Sports 2024", detail: "Cricket Tournament (Boys) · Participation", period: "27 Feb – 20 Apr 2024" },
-  { title: "National Science Day", detail: "Workshop — Penetration Testing & Bug Bounty", period: "29 Feb 2024" },
-  { title: "SecCom 2023 — Seminar", detail: "Computer Security Day · Celebration-Seminar", period: "30 Nov – 1 Dec 2023" },
-  { title: "SecCom 2023 — Competition", detail: "Computer Security Day · Competition", period: "30 Nov – 1 Dec 2023" },
-  { title: "Linux Administration Trends", detail: "Seminar · Modern Trends in Linux Administration", period: "19 Aug 2023" },
+  { title: "SecCom 2025", detail: "Expert Talk · Participation Certificate", period: "31 Oct – 1 Nov 2025", file: "/certificates/events/SecCom-2025-Expert-Talk.pdf" },
+  { title: "Freshers 2025", detail: "Volunteer Certificate · Celebration", period: "13 Oct – 29 Nov 2025", file: "/certificates/events/Freshers-2025-Volunteer.pdf" },
+  { title: "HR Spark 2025", detail: "Seminar · Participation Certificate", period: "8 Feb 2025", file: "/certificates/events/HR-Spark-2025.pdf" },
+  { title: "SecCom 2024", detail: "Celebration · Participation Certificate", period: "28–29 Nov 2024", file: "/certificates/events/SecCom-2024.pdf" },
+  { title: "Freshers Welcome 2024", detail: "Celebration · Participation Certificate", period: "1–7 Oct 2024", file: "/certificates/events/Freshers-Welcome-2024.pdf" },
+  { title: "TechFusion 2024 (BrainCon)", detail: "Intercollege Tech Challenge · Participation", period: "18 May 2024", file: "/certificates/events/TechFusion-2024-BrainCon.pdf" },
+  { title: "Annual Sports 2024", detail: "Cricket Tournament (Boys) · Participation", period: "27 Feb – 20 Apr 2024", file: "/certificates/events/Annual-Sports-2024-Cricket.pdf" },
+  { title: "National Science Day", detail: "Workshop — Penetration Testing & Bug Bounty", period: "29 Feb 2024", file: "/certificates/events/National-Science-Day-Bug-Bounty-Workshop.pdf" },
+  { title: "SecCom 2023 — Seminar", detail: "Computer Security Day · Celebration-Seminar", period: "30 Nov – 1 Dec 2023", file: "/certificates/events/SecCom-2023-Seminar.pdf" },
+  { title: "SecCom 2023 — Competition", detail: "Computer Security Day · Competition", period: "30 Nov – 1 Dec 2023", file: "/certificates/events/SecCom-2023-Competition.pdf" },
+  { title: "Linux Administration Trends", detail: "Seminar · Modern Trends in Linux Administration", period: "19 Aug 2023", file: "/certificates/events/Linux-Administration-Trends-2023.pdf" },
 ];
 
 export const softSkills = [

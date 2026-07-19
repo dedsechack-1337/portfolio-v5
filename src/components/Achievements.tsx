@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Trophy, ChevronDown, ImageIcon } from "lucide-react";
+import { Trophy, ChevronDown, ImageIcon, FileText } from "lucide-react";
 import { achievements, collegeActivities } from "../data";
 import { withBase } from "../lib/url";
 import SectionHeading from "./SectionHeading";
@@ -71,7 +71,19 @@ export default function Achievements() {
                   <p className="text-sm text-(--color-ink) font-medium">{c.title}</p>
                   <p className="text-xs text-(--color-ink-muted)">{c.detail}</p>
                 </div>
-                <span className="font-mono text-[11px] text-(--color-ink-faint) shrink-0">{c.period}</span>
+                <div className="flex items-center gap-3 shrink-0">
+                  <span className="font-mono text-[11px] text-(--color-ink-faint)">{c.period}</span>
+                  {c.file && (
+                    <a
+                      href={withBase(c.file)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 font-mono text-[11px] text-(--color-green-dim) hover:text-(--color-green) transition-colors"
+                    >
+                      <FileText className="w-3.5 h-3.5" /> view
+                    </a>
+                  )}
+                </div>
               </div>
             ))}
           </div>
