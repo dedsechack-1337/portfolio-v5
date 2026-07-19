@@ -1,10 +1,14 @@
 export const profile = {
   name: "Amit Roy",
   roles: [
-    "Cybersecurity Engineer",
-    "Ethical Hacker",
-    "Penetration Tester",
-    "IoT & AI Security Specialist",
+    "🛡️ Cybersecurity Engineer",
+    "🕵️ SOC Analyst",
+    "⚙️ DevSecOps/DevOps",
+    "💻 DSA & Problem Solver",
+    "🤖 AIML Engineer / Security",
+    "🏗️ System Design",
+    "🐧 OS Internals",
+    "📡 IoT & AI Security",
   ],
   location: "Ashoknagar, West Bengal, India",
   email: "amitroy9091988431@gmail.com",
