@@ -237,15 +237,15 @@ export const certifications = [
   { name: "Certified Ethical Hacking Professional (CEHP)", issuer: "Indian Cyber Security Solutions", meta: "No. ICSS369034002019 · Nov 2019 · Grade B", files: ["/certificates/CEHP-Certificate.jpg"] },
   { name: "CCNA — Cisco Certified Network Associate", issuer: "Indian Cyber Security Solutions", meta: "No. ICSS36903292019 · Feb 2019 · Grade A", files: ["/certificates/CCNA-Certificate.jpg"] },
   { name: "Practical Ethical Hacking — Complete Course", issuer: "TCM Security", meta: "11 Nov 2020", files: ["/certificates/TCM-Practical-Ethical-Hacking.pdf"] },
-  { name: "Ethical Hacking — Industrial Training (O+)", issuer: "ISOEH (EC-Council Accredited)", meta: "Reg: ISOEH/EH/24/1670 · Jul–Aug 2024", files: ["/certificates/ISOEH-Ethical-Hacking-Industrial-Training.pdf"] },
-  { name: "Network Pen Testing — Level 1 (O+)", issuer: "ISOEH (EC-Council Accredited)", meta: "Reg: ISOEH/NP/25/1843 · Jan 2025", files: [] },
+  { name: "Ethical Hacking — Industrial Training (O+)", issuer: "ISOEH (EC-Council Accredited)", meta: "Reg: ISOEH/EH/24/1670 · Jul–Aug 2024", files: ["/certificates/ISOEH-Ethical-Hacking-Industrial-Training.jpg"] },
+  { name: "Network Pen Testing — Level 1 (O+)", issuer: "ISOEH (EC-Council Accredited)", meta: "Reg: ISOEH/NP/25/1843 · Jan 2025", files: ["/certificates/ISOEH-Network-PenTesting-Level1.pdf"] },
   { name: "IT-SMART — Distinction", issuer: "APLL Learning Solutions", meta: "Cert No. 1790437 · Oct 2017", files: ["/certificates/ITSMART-Certificate.jpg"] },
   { name: "Cyber Hygiene Practices", issuer: "MeitY — ISEA, Govt of India", meta: "No. MeitY/ISEA/WCHP/023098 · 20 Oct 2022", files: ["/certificates/MeitY-ISEA-Cyber-Hygiene.pdf"] },
   { name: "TryHackMe — Advent of Cyber 2025", issuer: "TryHackMe · 24 Challenges Completed", meta: "THM-AQA6PIKKLL · 7 Jan 2026", files: ["/certificates/TryHackMe-Advent-of-Cyber-2025.pdf"] },
   { name: "Ethical Hacking — Megamind", issuer: "Nikistian Media", meta: "Certificate of Participation · 8 Jan 2023", files: ["/certificates/Ethical-Hacking-Megamind.pdf"] },
   { name: "Getting Started with AI", issuer: "IBM SkillsBuild · Credly Badge", meta: "PLAN-E624C2604060 · 10 Aug 2025", files: ["/certificates/IBM-Getting-Started-With-AI.pdf"] },
   { name: "Journey to Cloud — Envisioning Your Solution", issuer: "IBM SkillsBuild", meta: "Badge 7a4e22af-2136-4b8f-9e44-e30b0655f34a · 16 Aug 2025", files: ["/certificates/IBM-Journey-to-Cloud.pdf"] },
-  { name: "AI Doc Retrieval Lab (IBM Granite & Docling)", issuer: "Adobe Learning Manager", meta: "ALM-COURSE_3946473 · 16 Aug 2025", files: ["/certificates/Adobe-AI-Doc-Retrieval-Lab.pdf"] },
+  { name: "AI Doc Retrieval Lab (IBM Granite & Docling)", issuer: "Adobe Learning Manager", meta: "ALM-COURSE_3946473 · 16 Aug 2025", files: ["/certificates/IBM-AI-Doc-Retrieval-Lab.pdf"] },
   { name: "Web Hacking / Penetration Testing", issuer: "Udemy · Zaid Sabih, zSecurity", meta: "UC-694a5e76-b171-4470-8f46-6bed8e8596d5 · 7 Aug 2022", files: ["/certificates/Udemy-Web-Hacking-Pentesting.pdf"] },
 ];
 
@@ -255,10 +255,7 @@ export const achievements = [
     org: "Indian Cyber Security Solutions",
     date: "14 Aug 2022",
     detail: "Won first place (Rs. 5,000 cash prize) in a competitive CTF among professional cybersecurity practitioners.",
-    files: [
-      "/certificates/CTF-1st-Prize-ICSS-Certificate.png",
-      "/certificates/CTF-1st-Prize-ICSS.jpg",
-    ],
+    files: ["/certificates/CTF-1st-Prize-ICSS-Certificate.png"],
   },
   {
     title: "Kolkata Police & IEMLabs Hackathon 2022",
