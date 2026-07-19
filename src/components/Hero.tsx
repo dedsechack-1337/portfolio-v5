@@ -179,11 +179,9 @@ export default function Hero() {
                 <img
                   src={withBase("/assets/profile.jpg")}
                   alt="Portrait of Amit Roy"
-                  className="w-full h-full object-cover grayscale-[15%] contrast-110"
-                  style={{ filter: "sepia(8%) hue-rotate(60deg) saturate(1.05)" }}
+                  className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-(--color-bg) via-transparent to-(--color-green)/10" />
-                <div className="absolute left-0 right-0 h-16 bg-gradient-to-b from-(--color-green)/25 to-transparent scan-sweep" />
+                <div className="absolute left-0 right-0 h-16 bg-gradient-to-b from-(--color-green)/25 to-transparent scan-sweep pointer-events-none" />
               </div>
               <div className="p-3 border-t border-(--color-line) font-mono">
                 <div className="flex items-center justify-between text-[10px]">
