@@ -28,15 +28,21 @@ export default function Achievements() {
               <p className="text-xs font-mono text-(--color-green-dim) mb-1">{a.date}</p>
               <p className="text-sm text-(--color-ink-muted) mb-1">{a.org}</p>
               <p className="text-sm text-(--color-ink-muted) leading-relaxed mt-2">{a.detail}</p>
-              {a.file && (
-                <a
-                  href={withBase(a.file)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-4 inline-flex items-center gap-1.5 font-mono text-[11px] text-(--color-green-dim) hover:text-(--color-green) transition-colors pt-3 border-t border-(--color-line) w-full"
-                >
-                  <ImageIcon className="w-3.5 h-3.5" /> view certificate
-                </a>
+              {a.files.length > 0 && (
+                <div className="mt-4 flex flex-wrap gap-x-4 gap-y-1.5 pt-3 border-t border-(--color-line) w-full">
+                  {a.files.map((f, idx) => (
+                    <a
+                      key={f}
+                      href={withBase(f)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 font-mono text-[11px] text-(--color-green-dim) hover:text-(--color-green) transition-colors"
+                    >
+                      <ImageIcon className="w-3.5 h-3.5" />
+                      {a.files.length > 1 ? `view certificate ${idx + 1}` : "view certificate"}
+                    </a>
+                  ))}
+                </div>
               )}
             </div>
           </Reveal>
