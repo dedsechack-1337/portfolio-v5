@@ -64,10 +64,12 @@ export const skillGroups = [
     ],
   },
   {
-    title: "AI / ML",
+    title: "AI/ML & Security",
     items: [
       "Machine Learning", "Neural Networks", "NLP for Threat Detection",
       "Anomaly Detection", "AI-powered Malware Classification", "TensorFlow", "scikit-learn",
+      "Adversarial Machine Learning", "Prompt Injection Defense", "Model Poisoning Detection",
+      "LLM Security", "AI Red Teaming", "Model Evasion Techniques",
     ],
   },
   {
