@@ -234,12 +234,12 @@ export const syllabus = [
 ];
 
 export const certifications = [
-  { name: "Certified Ethical Hacking Professional (CEHP)", issuer: "Indian Cyber Security Solutions", meta: "No. ICSS369034002019 · Nov 2019", files: ["/certificates/CEHP-Certificate.jpg", "/certificates/CEHP-Gradesheet.jpg"] },
-  { name: "CCNA — Cisco Certified Network Associate", issuer: "Indian Cyber Security Solutions", meta: "No. ICSS36903292019 · Feb 2019 · Grade A", files: ["/certificates/CCNA-Certificate.jpg", "/certificates/CCNA-Gradesheet.jpg"] },
+  { name: "Certified Ethical Hacking Professional (CEHP)", issuer: "Indian Cyber Security Solutions", meta: "No. ICSS369034002019 · Nov 2019 · Grade B", files: ["/certificates/CEHP-Certificate.jpg"] },
+  { name: "CCNA — Cisco Certified Network Associate", issuer: "Indian Cyber Security Solutions", meta: "No. ICSS36903292019 · Feb 2019 · Grade A", files: ["/certificates/CCNA-Certificate.jpg"] },
   { name: "Practical Ethical Hacking — Complete Course", issuer: "TCM Security", meta: "11 Nov 2020", files: ["/certificates/TCM-Practical-Ethical-Hacking.pdf"] },
   { name: "Ethical Hacking — Industrial Training (O+)", issuer: "ISOEH (EC-Council Accredited)", meta: "Reg: ISOEH/EH/24/1670 · Jul–Aug 2024", files: [] },
   { name: "Network Pen Testing — Level 1 (O+)", issuer: "ISOEH (EC-Council Accredited)", meta: "Reg: ISOEH/NP/25/1843 · Jan 2025", files: [] },
-  { name: "IT-SMART — Distinction", issuer: "APLL Learning Solutions", meta: "Cert No. 1790437 · Oct 2017", files: [] },
+  { name: "IT-SMART — Distinction", issuer: "APLL Learning Solutions", meta: "Cert No. 1790437 · Oct 2017", files: ["/certificates/ITSMART-Certificate.jpg"] },
   { name: "Cyber Hygiene Practices", issuer: "MeitY — ISEA, Govt of India", meta: "No. MeitY/ISEA/WCHP/023098 · 20 Oct 2022", files: ["/certificates/MeitY-ISEA-Cyber-Hygiene.pdf"] },
   { name: "TryHackMe — Advent of Cyber 2025", issuer: "TryHackMe · 24 Challenges Completed", meta: "THM-AQA6PIKKLL · 7 Jan 2026", files: ["/certificates/TryHackMe-Advent-of-Cyber-2025.pdf"] },
   { name: "Ethical Hacking — Megamind", issuer: "Nikistian Media", meta: "Certificate of Participation · 8 Jan 2023", files: [] },
@@ -262,7 +262,7 @@ export const achievements = [
     org: "Netaji Indoor Stadium, Kolkata",
     date: "29 Jul 2022",
     detail: "Competed in a city-level hackathon co-organised by Kolkata Police and IEMLabs.",
-    file: null,
+    file: "/certificates/Hackathon-2022-KolkataPolice.jpg",
   },
   {
     title: "BrainCon 2024 — TechFusion",
