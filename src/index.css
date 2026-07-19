@@ -179,3 +179,63 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
   transform: translateY(-3px);
   box-shadow: 0 12px 40px -12px rgba(57,255,136,0.18);
 }
+
+/* ---------- 3D hologram photo card ---------- */
+@keyframes photo-float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes glow-pulse {
+  0%, 100% { opacity: 0.55; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.06); }
+}
+
+.photo-3d-stage {
+  perspective: 1400px;
+  animation: photo-float 5.5s ease-in-out infinite;
+}
+
+.photo-3d-card {
+  transform-style: preserve-3d;
+  transition: transform 0.15s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.3s ease;
+  will-change: transform;
+  box-shadow:
+    0 25px 60px -18px rgba(0,0,0,0.65),
+    0 0 0 1px rgba(57,255,136,0.08);
+}
+
+.photo-3d-layer {
+  transform: translateZ(40px);
+  transform-style: preserve-3d;
+}
+
+.photo-3d-blob {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(38px);
+  pointer-events: none;
+  animation: glow-pulse 4s ease-in-out infinite;
+}
+
+.photo-3d-glare {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  background: radial-gradient(circle 140px at var(--glare-x, 50%) var(--glare-y, 50%), rgba(255,255,255,0.28), transparent 70%);
+  mix-blend-mode: overlay;
+}
+
+.photo-3d-card:hover .photo-3d-glare {
+  opacity: 1;
+}
+
+.photo-3d-edge {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  box-shadow: inset 0 0 0 1px rgba(57,255,136,0.25);
+}

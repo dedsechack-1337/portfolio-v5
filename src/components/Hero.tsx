@@ -1,4 +1,5 @@
-import { useEffect, useRef, useState } from "react";
+import type { CSSProperties } from "react";
+import { useEffect, useRef, useState, type PointerEvent as ReactPointerEvent } from "react";
 import { ArrowDown, Download } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "./BrandIcons";
 import { profile, stats } from "../data";
@@ -25,6 +26,30 @@ export default function Hero() {
     typeof window !== "undefined" &&
       window.matchMedia?.("(prefers-reduced-motion: reduce)").matches
   );
+
+  const cardRef = useRef<HTMLDivElement>(null);
+  const [tilt, setTilt] = useState({ rx: 0, ry: 0 });
+  const [glare, setGlare] = useState({ x: 50, y: 50 });
+
+  const handlePointerMove = (e: ReactPointerEvent<HTMLDivElement>) => {
+    if (reduceMotion.current) return;
+    const el = cardRef.current;
+    if (!el) return;
+    const rect = el.getBoundingClientRect();
+    const px = (e.clientX - rect.left) / rect.width;
+    const py = (e.clientY - rect.top) / rect.height;
+    const maxTilt = 14;
+    setTilt({
+      rx: (0.5 - py) * maxTilt,
+      ry: (px - 0.5) * maxTilt,
+    });
+    setGlare({ x: px * 100, y: py * 100 });
+  };
+
+  const handlePointerLeave = () => {
+    setTilt({ rx: 0, ry: 0 });
+    setGlare({ x: 50, y: 50 });
+  };
 
   useEffect(() => {
     if (reduceMotion.current) {
@@ -171,19 +196,43 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* biometric scan photo card */}
+        {/* biometric scan photo card — interactive 3D hologram */}
         <div className={`justify-self-center ${showRest ? "reveal" : "opacity-0"}`} style={{ animationDelay: "150ms" }}>
-          <div className="relative w-[240px] sm:w-[280px] md:w-[320px]">
-            <div className="corner-brackets panel relative overflow-hidden">
-              <div className="relative aspect-[4/5] overflow-hidden">
+          <div className="photo-3d-stage relative w-[240px] sm:w-[280px] md:w-[320px]">
+            {/* floating depth blobs behind the card */}
+            <div
+              className="photo-3d-blob w-40 h-40 -top-8 -left-8 bg-(--color-green)/30"
+              style={{ animationDelay: "0s" }}
+            />
+            <div
+              className="photo-3d-blob w-36 h-36 -bottom-6 -right-6 bg-(--color-amber)/25"
+              style={{ animationDelay: "1.4s" }}
+            />
+
+            <div
+              ref={cardRef}
+              onPointerMove={handlePointerMove}
+              onPointerLeave={handlePointerLeave}
+              className="photo-3d-card corner-brackets panel relative overflow-hidden"
+              style={
+                {
+                  transform: `rotateX(${tilt.rx}deg) rotateY(${tilt.ry}deg)`,
+                  "--glare-x": `${glare.x}%`,
+                  "--glare-y": `${glare.y}%`,
+                } as CSSProperties
+              }
+            >
+              <div className="photo-3d-layer relative aspect-[4/5] overflow-hidden">
                 <img
                   src={withBase("/assets/profile.jpg")}
                   alt="Portrait of Amit Roy"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute left-0 right-0 h-16 bg-gradient-to-b from-(--color-green)/25 to-transparent scan-sweep pointer-events-none" />
+                <div className="photo-3d-glare" />
+                <div className="photo-3d-edge" />
               </div>
-              <div className="p-3 border-t border-(--color-line) font-mono">
+              <div className="relative p-3 border-t border-(--color-line) font-mono bg-(--color-panel)">
                 <div className="flex items-center justify-between text-[10px]">
                   <span className="text-(--color-ink-faint)">CLEARANCE</span>
                   <span className="text-(--color-green)">LEVEL 5</span>
