@@ -9,6 +9,7 @@ export const profile = {
     "🏗️ System Design",
     "🐧 OS Internals",
     "📡 IoT & AI Security",
+    "📱 Android Security",
   ],
   location: "Ashoknagar, West Bengal, India",
   email: "amitroy9091988431@gmail.com",
@@ -94,6 +95,16 @@ export const skillGroups = [
       "Arduino", "ESP32", "STM32", "Raspberry Pi", "nRF52", "RP2040", "PIC", "8051",
       "RFID/NFC Systems", "IoT Firmware Analysis & Exploitation", "Embedded C & Assembly",
       "Circuit Design", "VLSI Chip Designing", "FPGA",
+    ],
+  },
+  {
+    title: "Android Security",
+    items: [
+      "Android App Pentesting", "APK Reverse Engineering", "Smali/Baksmali",
+      "JADX / APKTool", "Frida Instrumentation", "SSL Pinning Bypass",
+      "Root Detection Bypass", "MobSF", "Android Malware Analysis",
+      "ADB & Android Debug Bridge", "Android Forensics", "Magisk & Rooting",
+      "Android Permissions Model", "Intent & Broadcast Exploitation",
     ],
   },
 ];
