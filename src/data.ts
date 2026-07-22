@@ -64,7 +64,7 @@ export const skillGroups = [
     ],
   },
   {
-    title: "AI/ML & Security",
+    title: "AIML Engineer/Security",
     items: [
       "Machine Learning", "Neural Networks", "NLP for Threat Detection",
       "Anomaly Detection", "AI-powered Malware Classification", "TensorFlow", "scikit-learn",
