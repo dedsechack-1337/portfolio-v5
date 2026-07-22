@@ -26,7 +26,7 @@ export const profile = {
 
 export const stats = [
   { label: "CTF 1st Prize", value: "Aug 2022" },
-  { label: "Public Repos", value: "33" },
+  { label: "Public Repos", value: "45+" },
   { label: "Languages Learned", value: "28+" },
   { label: "Certifications", value: "12+" },
 ];
@@ -325,7 +325,7 @@ export const languages = [
 ];
 
 export const otherHighlights = [
-  "33 public repositories on GitHub; 5+ actively maintained open-source cybersecurity tools with community recognition.",
+  "45+ public repositories on GitHub; 5+ actively maintained open-source cybersecurity tools with community recognition.",
   "Self-taught in 28+ programming languages — avg. 21–30 days per language; spans systems, data science, and mobile domains.",
   "Selected for Brainware University Earn While You Learn Scheme (2024) — limited merit cohort for academic & technical excellence.",
 ];

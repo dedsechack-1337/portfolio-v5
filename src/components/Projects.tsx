@@ -65,7 +65,7 @@ export default function Projects() {
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 font-mono text-sm text-(--color-green-dim) hover:text-(--color-green) transition-colors"
         >
-          <GithubIcon className="w-4 h-4" /> view all 33 repositories →
+          <GithubIcon className="w-4 h-4" /> view all 45+ repositories →
         </a>
       </Reveal>
     </section>
