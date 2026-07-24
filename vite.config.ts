@@ -8,6 +8,6 @@ import tailwindcss from '@tailwindcss/vite'
 // if you rename the repo, or set it to "/" for a user/org page (a repo
 // literally named <username>.github.io) or a custom domain.
 export default defineConfig({
-  base: '/portfolio-v5/',
+  base: '/',
   plugins: [react(), tailwindcss()],
 })
